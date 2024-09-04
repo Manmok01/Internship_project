@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+  <!-- <script src="Signup.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+  <script src="jquery.js"></script>
+  <title>Password</title>
+  <style>
+  .custom-card{
+    box-shadow: 0 0 10px rgba(4, 112, 190, 0.5);
+  }
+  </style>
+</head>
+<body>
+  <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100 ">
+    <div class="card custom-card p-3 " style="width:400px;">
+      <div class="card-body">
+        <img src="m.gif" alt="Mine" width="50px" height="50px"><h2 class="card-title mb-4">&nbspHi</h2>
+        <form>
+          <div class="form-floating mt-3 mb-3">
+            <input type="password" class="form-control" id="pwd" placeholder="Enter your password" name="pswd">
+            <label for="pwd">Password</label>
+            <input type="checkbox" id="checkBox" /*onclick="myfunction2()"/*>Show Password
+          </div>
+          <div class="msg-box" id="msgBox" ></div>
+          <button  id ="passwordButton" type="button" class="btn btn-primary w-100 opacity-75" /*onclick="password()"/*>Next</button>
+          <div class="text-center mt-2">
+            <a href="#" id="f2" /*onclick="f1()"/*>Forgot password?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

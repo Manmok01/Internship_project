@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+  <!-- <Script src="Signup.js"></Script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+  <script src="jquery.js"></script>
+  <title>Basic Information</title>
+  <style>
+    .custom-card{
+      box-shadow: 0 0 10px rgba(4, 112, 190, 0.5);
+    }
+    .errorMessage{
+      color:red;
+      display:none;
+      margin-left:10px;
+    }
+    </style>
+</head>
+<body>
+  <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100 ">
+    <div class="card custom-card p-3 " style="width:400px;">
+      <div class="card-body">
+        <img src="m.gif" alt="Mine" width="50px" height="50px"><h2 class="card-title mb-4">Basic Information</h2>
+        <form class="row g-3">
+          <div class="col">
+            <select class="form-select form-select-lg" id="month">
+              <option value="Month" diabled selected>Month</option>
+              <option>January</option>
+              <option>Feburary</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>
+            <div><span id="monthError" class="errorMessage">Please select an option</span><br></div>
+          </div>
+          <div class="col">
+            <input type="text" class="form-control form-control-lg" id="day" placeholder="Day" maxlength="2">
+            <div><span id="dayError" class="errorMessage">Please enter the day</span><br></div>
+          </div>
+          <div class="col">
+            <input type="text" class="form-control form-control-lg" id="year" placeholder="Year" maxlength="4"> 
+            <div><span id="yearError" class="errorMessage">Please enter the year</span></div>
+            <br>
+          </div>
+          <div>
+            <select class="form-select form-select-lg" id="gender" placeholder="Gender">
+              <option value="Gender" selected>Gender</option>
+              <option value="Female">Female</option>
+              <option value="Male">Male</option>
+            </select>
+            <div><span id="genderError" class="errorMessage">Please select an option</span><br></div>
+          </div>
+          <div class="col-12">
+            <button id="basicButton" type="button" class="btn btn-primary w-100 opacity-75" /*onclick="basic()"/*>
+                Next
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

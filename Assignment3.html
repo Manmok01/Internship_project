@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+  <!-- <script src="Signup.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+  <script src="jquery.js"></script>
+  <title>Account Creation</title>
+  <style>
+    .custom-card{
+      box-shadow: 0 0 10px rgba(4, 112, 190, 0.5);
+    }
+    </style>
+</head>
+<body>
+  <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100 ">
+    <div class="card custom-card p-3 " style="width:400px;">
+      <div class="card-body">
+        <img src="m.gif" alt="Mine" width="50px" height="50px"><h2 class="card-title mb-4">Create an Account</h2>
+        <form >
+          <div class="form-floating mb-3 mt-3">
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="FirstName" >
+            <label for="firstName">First Name</label>
+          </div>
+          <div class="form-floating mb-3 mt-3">
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name">
+            <label for="lastName">Last Name</label>
+          </div>
+          <div class="msg-box" id="messagebox"></div>
+          <button id="createAccButton" type="button" class="btn btn-primary w-100 opacity-75" /*onclick="createacc()"/*>
+            Next
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

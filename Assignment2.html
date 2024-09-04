@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+  <!-- <script src="Signup.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+  <script src="jquery.js"></script>
+  <title>Forgot Password</title>
+  <style>
+  .custom-card{
+    box-shadow: 0 0 10px rgba(4, 112, 190, 0.5);
+  }
+  .msg-box{
+    display:block;
+  }
+  </style>
+</head>
+<body>
+  <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100 ">
+    <div class="card custom-card p-3 " style="width:400px;">
+      <div class="card-body">
+        <img src="m.gif" alt="Mine" width="50px" height="50px"><h2 class="card-title mb-4">Recovery Mail</h2>
+        <form>
+          <div class="form-floating mb-3 mt-3">
+            <input type="email" class="form-control" id="email1" placeholder="Enter your email" >
+            <label for="email">Recovery Email</label>
+          </div>
+          <div class="msg-box" id="msgbox"></div>
+          <button type="submit" id="recoverButton" class="btn btn-primary w-100 opacity-75 " /*onclick="recover()"/*>
+            Next
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 
+
+
